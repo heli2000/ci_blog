@@ -22,19 +22,19 @@ final class BlogModel extends CI_Model
 
     public function findby_id($id)
     {
-        $result = $this->db->get_where($this->table, array("id" => $id))->row();
+        $result = $this->db->get_where($this->table, array("blog_id" => $id))->row();
         return $result;
     }
 
     public function update($id, $data)
     {
-        $result = $this->db->update($this->table, $data, array("id" => $id));
+        $result = $this->db->update($this->table, $data, array("blog_id" => $id));
         return $result;
     }
 
     public function delete($id)
     {
-        $result = $this->db->delete($this->table, array("id" => $id));
+        $result = $this->db->delete($this->table, array("blog_id" => $id));
         return $result;
     }
 }

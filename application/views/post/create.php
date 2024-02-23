@@ -27,7 +27,7 @@
                 </div>
 
                 <form method="post"
-                    action="<?php echo $edit === true ? base_url('blog/update/' . $edit_data->id) : base_url('blog/store'); ?>">
+                    action="<?php echo $edit === true ? base_url('blog/update/' . $edit_data->blog_id) : base_url('blog/store'); ?>">
 
                     <div class="form-group">
                         <label>Title</label>
