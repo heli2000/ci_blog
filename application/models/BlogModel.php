@@ -11,6 +11,10 @@ final class BlogModel extends CI_Model
     public function get_records()
     {
         $result = $this->db->get($this->table)->result();
+        // echo $this->cache->increment('iterator'); 
+        // echo $this->cache->increment('iterator'); 
+        // echo $this->cache->increment('iterator'); 
+        // echo $this->cache->increment('iterator'); 
         return $result;
     }
 
