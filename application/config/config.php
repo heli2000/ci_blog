@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8081/ci_example';
+$config['base_url'] = 'http://localhost:8595/';
 
 /*
 |--------------------------------------------------------------------------
@@ -391,6 +391,15 @@ $config['sess_save_path']          = NULL;
 $config['sess_match_ip']           = FALSE;
 $config['sess_time_to_update']     = 300;
 $config['sess_regenerate_destroy'] = FALSE;
+
+
+/**Aws related variables */
+
+
+$config['accessKeyId'] = 'AKIAVRUVPJRNGBVWREVB';
+$config['secretAccessKey'] = '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';
+$config['region'] = 'us-east-1';
+$config['bucket'] = 'ciuploadtest';
 
 /*
 |--------------------------------------------------------------------------

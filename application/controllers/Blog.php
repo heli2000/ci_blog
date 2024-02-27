@@ -52,6 +52,3 @@ final class Blog extends CI_Controller
         redirect(base_url("/blog"));
     }
 }
-
-
-?>
